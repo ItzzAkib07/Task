@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.main-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section {
+  gap: 1rem;
+  width: 30%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section .heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.heading::before,
+.heading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 150px;
+  height: 1px;
+  background-color: gray;
+}
+
+.heading::before {
+  left: 0;
+  transform: translate(1%, 50%);
+}
+
+.heading::after {
+  right: 0;
+  transform: translate(-1%, 50%);
+}
+
+.section .heading span {
+  color: #047d5f;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.section .sub-section {
+  width: 92%;
+  height: auto;
+  display: flex;
+  padding: 1rem;
+  align-items: flex-start;
+  border-radius: 0.2rem;
+  border: 1px solid gray;
+  justify-content: space-between;
+}
+
+.sub-section.selected {
+  border-color: #047d5f;
+  background-color: #f5fbf9;
+}
+
+.section .sub-section .radio-btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.radio-btn .label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+input {
+  accent-color: #047d5f;
+}
+
+.section .sub-section .radio-btn .label .price {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 4rem;
+}
+
+.price .discountedPrice {
+  font-weight: 700;
+}
+
+.price .originalPrice {
+  font-weight: 50;
+  font-size: 0.8rem;
+  color: gray;
+  text-decoration: line-through;
+}
+
+.section .sub-section .discount {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.discount span {
+  font-weight: 700;
+}
+
+.Popular {
+  color: #047d5f;
+  font-weight: 700;
+}
+
+.order-details{
+    display: none;
+}
+
+.section .total {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.total .Free {
+  color: #6ead9e;
+}
+
+#selectedValue {
+  font-weight: 700;
+}
+
+.section .cart-button {
+  gap: 0.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cart-button button {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  padding: 1rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0.2rem;
+  background-color: #047d5f;
+}
+
+.cart-button .success-msg {
+  color: #047d5f;
+  display: none;
+  text-align: center;
+}
+
+.cart-button .copyright {
+  text-align: right;
+}
+
+#size {
+  width: 5rem;
+}
+
+#colour {
+  width: 5rem;
+}
+
+table th {
+  text-align: left;
+}
